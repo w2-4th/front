@@ -13,7 +13,7 @@ function App() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ query: input }),
+        body: JSON.stringify({ content: "안녕하세요! 테스트 메시지에요. 어떻게 도와드릴까요?" }),
       });
       const data = await res.json();
       setResponse(data.response);
