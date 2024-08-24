@@ -8,7 +8,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/query', {
+      const res = await fetch('http://localhost:8000/api/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
